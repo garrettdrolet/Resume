@@ -1,0 +1,25 @@
+.filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 14px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filter-btn:hover {
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  border-color: #0077cc;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
