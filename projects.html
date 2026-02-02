@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Garrett Drolet – Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.8;
+	  background-image: url('test.png');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+    }
+    h1, h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .contact a {
+      margin-right: 10px;
+    }
+	.center-name {
+		text-align: center;
+		font-size:400%;
+	}
+	.section-header{
+		text-align: center;
+		font-size:250%;
+	}
+	
+	.navbar {
+	  background-color: white;
+	  padding: 15px 30px;
+	  margin: 30px auto;
+	  width: fit-content;
+
+	  border-radius: 10px;
+	  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+	  text-align: center;
+	  border: 1px solid rgba(0, 0, 0, 0.1);
+	  
+	  position: sticky;
+	  top: 20px;
+	  z-index: 1000;
+	}
+
+	.navbar a {
+	  margin: 0 15px;
+	  text-decoration: none;
+	  color: #333;
+	  font-weight: 600;
+	}
+
+	.navbar a:hover {
+	  color: #0077cc;
+	}
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a> |
+    <a href="experience.html">Experience</a> |
+    <a href="education.html">Education</a> |
+	<a href="projects.html">Projects</a>
+  </nav>
+
+ <div class="filters" style="text-align:center">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="javascript">JavaScript</button>
+  <button class="filter-btn" data-filter="python">Python</button>
+  <button class="filter-btn" data-filter="matlab">MATLAB</button>
+  <button class="filter-btn" data-filter="HTML">HTML</button>
+</div>
+
+<section class="projects">
+  <div class="project-card" data-tags="javascript HTML">
+    <h3>Resume Website</h3>
+    <p>The resume you're reading right now! Built with HTML and JavaScript.</p>
+  </div>
+  
+  <div class="project-card" data-tags="matlab python">
+    <h3>Reinforced Learning MLB Batter Project</h3>
+    <p>a MATLAB-based Reinforced Learning 'Batter' that competes against MLB level 
+		pitcher data to improve MLB batter at-bat decision making and enhance performance against top-level MLB pitchers.<br>
+		<a href = "https://drive.mathworks.com/sharing/6979dc15-1666-443c-b83f-3be1fabc618d" target="_blank">Matlab Code</a><br>
+		<a href = "MLB RL Presentation.pdf" target="_blank">PDF Presentation</a><br>
+		<a href = "Drolet_Garrett_Final_Report.pdf" target="_blank">IEEE Report</a><br>
+		</p>
+  </div>
+  
+  <div class="project-card" data-tags="python matlab">
+    <h3>Gassmann Fluid Substitution GUI</h3>
+    <p> Matlab model GUI built based off a previously built Matlab formula code. Read more about this GUI in the Experience section of my resume.
+		</p>
+  </div>
+  
+  <div class="project-card" data-tags="python matlab">
+    <h3>Pitch Velocity Predictor</h3>
+    <p>a Python-based, Matlab model, neural network trained on thousands of pitcher statistics to 
+		accurately predict pitch velocity across player profiles.</p>
+  </div>
+
+  <div class="project-card" data-tags="matlab python">
+    <h3>"Knights Tour" 3-D Modeling Project</h3>
+    <p>a MATLAB-based 3D visualization system to compute and perform the Knight's Tour algorithm 
+		using trained movement models and image datasets.</p>
+  </div>
+  
+
+</section>
+
+<script src="projects.js"></script>
+</body>
+</html>
